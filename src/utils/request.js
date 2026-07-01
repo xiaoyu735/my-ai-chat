@@ -4,7 +4,7 @@ import router from '@/router'
 const TOKEN_KEY = 'token'
 
 const request = axios.create({
-  baseURL: 'http://localhost:3000',
+  baseURL: import.meta.env.VITE_API_BASE_URL || '/api',
   timeout: 10000,
 })
 
